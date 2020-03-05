@@ -2,12 +2,6 @@
 // Windows -> Preferences -> Java -> Compiler -> Errors/Warnings ->
 // Deprecated and trstricted API -> Forbidden reference (access rules): -> change to 'warning'
 
-import sun.misc.BASE64Encoder;
-
-import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.DESKeySpec;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,7 +10,6 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
-import java.security.SecureRandom;
 
 /**
  * Created by Zechen Wang on 2015/5/19.
@@ -48,8 +41,7 @@ public class TriangleHandle {
 	public TriangleHandle() {
 		
 		Container cont = frame.getContentPane();
-		JTabbedPane tab = null;
-		tab = new JTabbedPane(JTabbedPane.TOP);
+		JTabbedPane tab = new JTabbedPane(JTabbedPane.TOP);
 		
 		
 		//pan1
