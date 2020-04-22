@@ -3,6 +3,7 @@
 // Deprecated and trstricted API -> Forbidden reference (access rules): -> change to 'warning'
 
 import javax.swing.*;
+import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -58,13 +59,13 @@ public class TriangleHandle {
 		lab2.setFont(fn);
 		lab3.setBounds(700, 0, 180, 100);
 		lab3.setFont(fn);
-		text11.setBounds(340, 25, 240, 50);
+		text11.setBounds(340, 25, 250, 50);
 		text11.setFont(fn);
-		text12.setBounds(880, 25, 150, 50);
+		text12.setBounds(890, 25, 250, 50);
 		text12.setFont(fn);
-		button11.setBounds(1050, 25, 80, 50);
+		button11.setBounds(1160, 25, 80, 50);
 		button11.setFont(fn);
-		button12.setBounds(1150, 25, 100, 50);
+		button12.setBounds(1260, 25, 100, 50);
 		button12.setFont(fn);
 		pan1.setLayout(null);
 		pan1.add(lab1);
@@ -213,13 +214,13 @@ public class TriangleHandle {
 		lab2.setFont(fn);
 		lab3.setBounds(700, 0, 180, 100);
 		lab3.setFont(fn);
-		text21.setBounds(340, 25, 240, 50);
+		text21.setBounds(340, 25, 250, 50);
 		text21.setFont(fn);
-		text22.setBounds(880, 25, 150, 50);
+		text22.setBounds(890, 25, 250, 50);
 		text22.setFont(fn);
-		button21.setBounds(1050, 25, 80, 50);
+		button21.setBounds(1160, 25, 80, 50);
 		button21.setFont(fn);
-		button22.setBounds(1150, 25, 100, 50);
+		button22.setBounds(1260, 25, 100, 50);
 		button22.setFont(fn);
 		pan2.setLayout(null);
 		pan2.add(lab1);
@@ -369,13 +370,13 @@ public class TriangleHandle {
 		lab2.setFont(fn);
 		lab3.setBounds(700, 0, 180, 100);
 		lab3.setFont(fn);
-		text31.setBounds(340, 25, 240, 50);
+		text31.setBounds(340, 25, 250, 50);
 		text31.setFont(fn);
-		text32.setBounds(880, 25, 150, 50);
+		text32.setBounds(890, 25, 250, 50);
 		text32.setFont(fn);
-		button31.setBounds(1050, 25, 80, 50);
+		button31.setBounds(1160, 25, 80, 50);
 		button31.setFont(fn);
-		button32.setBounds(1150, 25, 100, 50);
+		button32.setBounds(1260, 25, 100, 50);
 		button32.setFont(fn);
 		pan3.setLayout(null);
 		pan3.add(lab1);
@@ -515,7 +516,7 @@ public class TriangleHandle {
 		tab.addTab("   Test 3   ", pan3);
 		tab.setFont(fn);
 		cont.add(tab);
-		frame.setSize(1300, 700);
+		frame.setSize(1400, 700);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setBackground(Color.WHITE);
