@@ -77,11 +77,7 @@ public class Triangle2D {
 	boolean contains(double x, double y) {
 		MyPoint p = new MyPoint(x, y);
 		double Area = getArea(p, p1, p2) + getArea(p, p1, p3) + getArea(p, p2, p3);
-		if (Area + 0.000000001 >= this.getArea() && Area - 0.000000001 <= this.getArea()) {
-			return true;
-		} else {
-			return false;
-		}
+		return Area + 0.000000001 >= this.getArea() && Area - 0.000000001 <= this.getArea();
 	}
 	
 	public boolean contains(Triangle2D t) {
