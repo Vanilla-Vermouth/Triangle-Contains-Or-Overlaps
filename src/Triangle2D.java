@@ -45,39 +45,17 @@ public class Triangle2D {
 		return p3;
 	}
 	
-	double getArea() {
-		double side1 = p1.distance(p2);
-//		  System.out.println(p1 + " " + p1.getX() + " " + p1.getY());
-		double side2 = p1.distance(p3);
-//		  System.out.println(p2 + " " + p2.getX() + " " + p2.getY());
-		double side3 = p2.distance(p3);
-//		  System.out.println(p3 + " " + p3.getX() + " " + p3.getY());
-		
-		double s = (side1 + side2 + side3) / 2;
-		return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
-	}
-	
-	double getPerimeter() {
-//		  System.out.println(p1 + " " + p1.getX() + " " + p1.getY());
-		return p1.distance(p2) + p1.distance(p3) + p2.distance(p3);
-	}
-	
 	double getArea(MyPoint PX, MyPoint PY, MyPoint PZ) {
-		double side1 = PX.distance(PY);
-//		  System.out.println(PX + " " + PX.getX() + " " + PX.getY());
-		double side2 = PX.distance(PZ);
-//		  System.out.println(PY + " " + PY.getX() + " " + PY.getY());
-		double side3 = PY.distance(PZ);
-//		  System.out.println(PZ + " " + PZ.getX() + " " + PZ.getY());
-		
-		double s = (side1 + side2 + side3) / 2;
-		return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+		return Math.abs((PX.getX() * (PY.getY() - PZ.getY()) + PY.getX() * (PZ.getY() - PX.getY()) + PZ.getX() * (PX.getY() - PY.getY())) / 2.0);
 	}
 	
 	boolean contains(double x, double y) {
 		MyPoint p = new MyPoint(x, y);
-		double Area = getArea(p, p1, p2) + getArea(p, p1, p3) + getArea(p, p2, p3);
-		return Area + 0.000000001 >= this.getArea() && Area - 0.000000001 <= this.getArea();
+		double new_area = getArea(p, p1, p2) + getArea(p, p1, p3) + getArea(p, p2, p3);
+		double triangle_area = getArea(p1, p2, p3);
+//		System.out.println(new_area);
+//		System.out.println(triangle_area);
+		return new_area + 0.00000000001 >= triangle_area && new_area - 0.00000000001 <= triangle_area;
 	}
 	
 	public boolean contains(Triangle2D t) {
