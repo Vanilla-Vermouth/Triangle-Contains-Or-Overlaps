@@ -4,7 +4,10 @@
 
 This program can help you to determine if a point is in a 2D triangle, and if a 2D triangle contains or overlaps with another 2D triangle.
 
+## Timeline
 
+- Start Date: 2015/05/19
+- Last Update: 2020/05/01
 
 ## Math Foundations
 
