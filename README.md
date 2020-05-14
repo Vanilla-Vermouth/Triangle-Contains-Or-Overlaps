@@ -21,7 +21,7 @@ Given the coordinates of the three vertices of a triangle ABC, the area can be c
 
 Here is the proof:
 
-<img src="triangle-contains-or-overlaps/image-20200512101742630.png" alt="image-20200512101742630" style="zoom:50%;" />
+<img src="triangle-contains-or-overlaps/image-20200512101742630.png" alt="image-20200512101742630" style="width:60%;" />
 
 $area_{ABED}=\frac{(AD+BE) \cdot DE}{2}=\frac{(A_Y+B_Y) \cdot (B_x-A_x)}{2}$
 
